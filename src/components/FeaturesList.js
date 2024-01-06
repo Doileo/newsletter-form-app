@@ -1,4 +1,5 @@
 import React from 'react';
+import iconList from "../images/icon-list.png";
 
 // Sample data for features
 const featuresData = [
@@ -16,14 +17,12 @@ const featuresData = [
 export default function FeaturesList() {
   return (
     <div>
-      <ul>
         {featuresData.map((feature, index) => (
-          <li key={index}>
-            <img src="../images/icon-list.png" alt="Icon" />
+          <div key={index}>
+            <img src={iconList} alt="Icon" className="feature--icon" />
             <p>{feature.description}</p>
-            </li>
+          </div>
         ))}
-      </ul>
     </div>
   );
 }
