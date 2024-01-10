@@ -16,13 +16,14 @@ const featuresData = [
 
 export default function FeaturesList() {
   return (
-    <div>
+    <div className="features-list-container">
         {featuresData.map((feature, index) => (
-          <div key={index}>
+          <div className="feature-item" key={index}>
             <img src={iconList} alt="Icon" className="feature--icon" />
-            <p>{feature.description}</p>
+            <p className="feature--description">{feature.description}</p>
           </div>
         ))}
     </div>
   );
 }
+

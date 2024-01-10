@@ -21,7 +21,8 @@ body {
 }
 
 .hero--image {
-  max-width: 400px;
+  max-width: 100%;
+  width: 100%;
   align-self: center;
 }
 
@@ -40,6 +41,32 @@ body {
   color:hsl(234, 29%, 20%);
   margin: 0;
   padding: 0 0 24px 24px;
+}
+
+.features-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+}
+
+.feature--icon {
+  width: 21px;
+  height: auto;
+  margin-left: 24px;
+}
+
+.feature--description {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: hsl(234, 29%, 20%);
+  padding-left: 16px;
+  margin: 0;
 }
 
 
