@@ -69,4 +69,60 @@ body {
   margin: 0;
 }
 
+/* NewsletterForm styles */
+form {
+  margin-left: 24px;
+}
+
+label {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin: 41px 0 8px 0;
+  display: block;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding: 12px;
+  width: 327px;
+  color:hsl(231, 7%, 60%);
+  font-size: 1em;
+  line-height: 150%;
+  margin: 0 24px 12px 0;
+}
+
+button {
+  width: 327px;
+  background-color: hsl(234, 29%, 20%);
+  color:hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+/* Error-message styles
+.form-group {
+  margin-bottom: 20px;
+}
+
+.invalid-input {
+  border: 1px solid #FF6155;
+  background-color: rgba(255, 97, 85, 0.15);
+}
+
+.error-message {
+  color: #FF6155;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+*/
+
 

@@ -34,18 +34,21 @@ export default function NewsletterForm() {
     <div>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={handleEmailChange}
-            placeholder="email@company.com"
-            required
-          />
+          <div className="form-group">
+            <label htmlFor="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="email@company.com"
+              required
+              className={`input-field ${!isValidEmail ? 'invalid-input' : ''}`}
+            />
+            {!isValidEmail && <p className="error-message">Valid email required</p>}
+          </div>
           <button type="submit">Subscribe to monthly newsletter</button>
-          {!isValidEmail && <p style={{ color: 'red' }}>Valid email required</p>}
         </form>
       ) : (
          <p>Form submitted successfully! Email: {email}</p>
