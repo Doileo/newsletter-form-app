@@ -15,6 +15,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -105,11 +109,12 @@ button {
   line-height: 150%;
   text-align: center;
   cursor: pointer;
-  margin-top: 24px;
+  margin: 24px 0;
 }
 
-/* Error-message styles
-.form-group {
+/* Error-message styles */
+
+/*.form-group {
   margin-bottom: 20px;
 }
 
@@ -124,5 +129,32 @@ button {
   margin-bottom: 0;
 }
 */
+
+.success-message {
+  padding: 149px 24px 40px 24px;
+}
+
+.success--header {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.success--message {
+  color: hsl(234, 29%, 20%);
+  line-height: 150%;
+}
+
+.success--button {
+  margin-top: 271px;
+}
+
+.success-message {
+  display: none;
+}
+
+
+
 
 
