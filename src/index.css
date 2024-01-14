@@ -24,7 +24,11 @@ body {
   flex-direction: column;
 }
 
-.hero--image {
+.desktop-image {
+  display: hide;
+}
+
+.mobile-image {
   max-width: 100%;
   width: 100%;
   align-self: center;
@@ -154,7 +158,42 @@ button {
   display: none;
 }
 
+/* Desktop styles (min-width: 768) */
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding: 24px 24px 0 64px;
+  }
 
+  .hero {
+    flex-direction: row-reverse;
+    gap: 5px;
+  }
+
+  .desktop-image {
+    width: 45%;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .hero--text-container {
+    margin: 30px 24px 0 0;
+  }
+
+  .hero--header {
+    font-size: 3.5em;
+    font-weight: 700;    
+    line-height: 100%;
+    padding-left: 0;
+  }
+
+  .hero--text {
+    padding: 0;
+    text-align: left;
+  }
+
+}
 
 
 

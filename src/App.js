@@ -6,7 +6,7 @@ import SuccessMessage from "./components/SuccessMessage"
 
 export default function App() {
   return (
-    <div>
+    <div className="main-container">
       <Header />
       <FeaturesList />
       <NewsletterForm />
