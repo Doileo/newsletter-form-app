@@ -24,10 +24,6 @@ body {
   flex-direction: column;
 }
 
-.desktop-image {
-  display: hide;
-}
-
 .mobile-image {
   max-width: 100%;
   width: 100%;
@@ -158,19 +154,28 @@ button {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+}
+
 /* Desktop styles (min-width: 768) */
 @media screen and (min-width: 768px) {
+
   .main-container {
     padding: 24px 24px 0 64px;
   }
 
   .hero {
     flex-direction: row-reverse;
+    align-items: flex-start;
     gap: 5px;
   }
 
   .desktop-image {
-    width: 45%;
+    width: 100%;
+    max-width: 400px;
   }
 
   .mobile-image {
@@ -178,7 +183,8 @@ button {
   }
 
   .hero--text-container {
-    margin: 30px 24px 0 0;
+    flex: 1;
+    margin-top: 30px;
   }
 
   .hero--header {
@@ -186,12 +192,28 @@ button {
     font-weight: 700;    
     line-height: 100%;
     padding-left: 0;
+    margin: 20px 0 10px 0;
   }
 
   .hero--text {
     padding: 0;
     text-align: left;
   }
+
+  .features-list-container {
+    width: 50%;
+    margin-top: -195px;
+  }
+
+  .feature--icon {
+    margin-left: 0;
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  /* Need to fix the responsive layout */
 
 }
 
