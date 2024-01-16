@@ -164,18 +164,21 @@ button {
 @media screen and (min-width: 768px) {
 
   .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 24px 24px 0 64px;
   }
 
   .hero {
     flex-direction: row-reverse;
     align-items: flex-start;
-    gap: 5px;
+    gap: 30px;
   }
 
   .desktop-image {
-    width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    width: 50%;
   }
 
   .mobile-image {
@@ -188,7 +191,7 @@ button {
   }
 
   .hero--header {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 700;    
     line-height: 100%;
     padding-left: 0;
@@ -196,13 +199,16 @@ button {
   }
 
   .hero--text {
+    margin: 24px 0;
     padding: 0;
     text-align: left;
   }
 
   .features-list-container {
+    flex: 1;
+    height: 200px;
     width: 50%;
-    margin-top: -195px;
+    margin-top: -290px;
   }
 
   .feature--icon {
@@ -211,6 +217,18 @@ button {
 
   form {
     margin-left: 0;
+  }
+
+  label {
+    margin: 25px 0 8px;
+  }
+
+  input {
+    margin-bottom: 8px;
+  }
+
+  button {
+    margin-top: 10px;
   }
 
   /* Need to fix the responsive layout */
