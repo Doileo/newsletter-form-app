@@ -160,8 +160,8 @@ button {
   }
 }
 
-/* Desktop styles (min-width: 768) */
-@media screen and (min-width: 768px) {
+/* Styles for screens larger than 768px (tablets) */
+@media only screen and (min-width: 769px) {
 
   .main-container {
     display: flex;
@@ -187,7 +187,7 @@ button {
 
   .hero--text-container {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .hero--header {
@@ -208,7 +208,7 @@ button {
     flex: 1;
     height: 200px;
     width: 50%;
-    margin-top: -290px;
+    margin-top: -325px;
   }
 
   .feature--icon {
@@ -227,12 +227,34 @@ button {
     margin-bottom: 8px;
   }
 
+  input,
+  button {
+    width: 300px;
+  }
+
   button {
     margin-top: 10px;
   }
+}
 
-  /* Need to fix the responsive layout */
 
+/* Styles for screens larger than 1024px (medium desktops) */
+@media only screen and (min-width: 1024px) {
+   .hero--text-container {
+    margin-top: 50px;
+   }
+
+   .features-list-container {
+    margin-top: -425px;
+   }
+
+   label {
+    margin-top: 41px;
+   }
+
+   button {
+    margin-top: 20px;
+   }
 }
 
 
