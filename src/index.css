@@ -240,21 +240,40 @@ button {
 
 /* Styles for screens larger than 1024px (medium desktops) */
 @media only screen and (min-width: 1024px) {
-   .hero--text-container {
+  .hero {
+    gap: 60px;
+  }
+
+  .hero--text-container {
     margin-top: 50px;
-   }
+  }
 
-   .features-list-container {
+  .hero--header {
+    font-size: 3.5em;
+  }
+
+  .features-list-container {
     margin-top: -425px;
-   }
+  }
 
-   label {
+  label {
     margin-top: 41px;
-   }
+  }
 
-   button {
+  input,
+  button {
+    width: 376px;
+  }
+
+  button {
     margin-top: 20px;
-   }
+  }
+
+  button:hover {
+    background: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
 }
 
 
