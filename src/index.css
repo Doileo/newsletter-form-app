@@ -30,12 +30,15 @@ body {
   align-self: center;
 }
 
+.hero--text-container {
+  padding-inline: 24px;
+}
+
 .hero--header {
   font-size: 2.5em;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
   margin-top: 40px;
-  padding-left: 24px;
 }
 
 .hero--text {
@@ -44,13 +47,14 @@ body {
   line-height: 150%;
   color:hsl(234, 29%, 20%);
   margin: 0;
-  padding: 0 0 24px 24px;
 }
 
 .features-list-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 13px;
+  margin-top: 24px;
+  padding-right: 24px;
 }
 
 .feature-item {
@@ -75,7 +79,11 @@ body {
 
 /* NewsletterForm styles */
 form {
-  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 label {
@@ -94,7 +102,6 @@ input {
   color:hsl(231, 7%, 60%);
   font-size: 1em;
   line-height: 150%;
-  margin: 0 24px 12px 0;
 }
 
 button {
@@ -240,11 +247,23 @@ button {
 
 /* Styles for screens larger than 1024px (medium desktops) */
 @media only screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container {
+    padding: 24px 0;
+  }
+
   .hero {
     gap: 60px;
   }
 
   .hero--text-container {
+    padding: 0;
     margin-top: 50px;
   }
 
