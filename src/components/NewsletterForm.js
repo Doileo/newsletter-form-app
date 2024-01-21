@@ -6,16 +6,14 @@ export default function NewsletterForm() {
   const [submitted, setSubmitted] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const validateEmail = (input) => {
-    // Simple email validation logic
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(input);
-  };
+  const validateEmail = (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (validateEmail(email)) {
+    const isValid = validateEmail(email);
+
+    if (isValid) {
       // Update state to show success message
       setSubmitted(true);
     } else {
@@ -34,8 +32,9 @@ export default function NewsletterForm() {
     <div>
       {!submitted ? (
         <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="email">Email address</label>
+        <div className={`form-group ${!isValidEmail ? 'invalid-input' : ''}`}>
+          <label htmlFor="email" className={`label-field ${!isValidEmail ? 'invalid-input' : ''}`}>Email address</label>
+          <div className="input-field-container">
           <input
             type="email"
             id="email"
@@ -44,9 +43,13 @@ export default function NewsletterForm() {
             onChange={handleEmailChange}
             placeholder="email@company.com"
             required
+            autoComplete="email"
             className={`input-field ${!isValidEmail ? 'invalid-input' : ''}`}
           />
-          {!isValidEmail && <p className="error-message">Valid email required</p>}
+          {!isValidEmail && (
+            <p className="error-message">Valid email required</p>
+          )}
+          </div>
         </div>
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
