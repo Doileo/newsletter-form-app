@@ -246,6 +246,24 @@ button {
     right: 0;
     margin: -23px 4px 8px 8px;
   }
+
+  .success-message {
+    padding: 48px 64px 0 64px;
+  }
+
+  .success--header {
+    font-size: 3.5em;
+    line-height: 100%;
+  }
+
+  .success--message {
+    margin-bottom: 40px;
+  }
+
+  .success--button {
+    margin-top: 10px;
+    width: 380px;
+  }
 }
 
 /* Styles for screens larger than 1024px (medium desktops) */
@@ -295,6 +313,25 @@ button {
     background: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .success-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 35px;
+    margin-top: 90px;
+    width: 70%;
+  }
+
+  .success--icon {
+    display: flex;
+    max-width: 64px;
+  }
+
+  .success--header,
+  .success--message {
+    margin: 0;
   }
 }
 
