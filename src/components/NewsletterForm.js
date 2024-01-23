@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import SuccessMessage from './SuccessMessage';
 
-export default function NewsletterForm() {
+export default function NewsletterForm({ setSubmitted }) {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(true);
 
   const validateEmail = (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
@@ -14,7 +12,7 @@ export default function NewsletterForm() {
     const isValid = validateEmail(email);
 
     if (isValid) {
-      // Update state to show success message
+      // Call the function from props to update App.js state
       setSubmitted(true);
     } else {
       // Update state to indicate invalid email
@@ -23,18 +21,18 @@ export default function NewsletterForm() {
   };
 
   const handleEmailChange = (e) => {
-    // Reset validation status when user types
+    // Reset validation status when the user types
     setIsValidEmail(true);
     setEmail(e.target.value);
-  }; 
-  
+  };
+
   return (
-    <div>
-      {!submitted ? (
-        <form onSubmit={handleSubmit}>
-        <div className={`form-group ${!isValidEmail ? 'invalid-input' : ''}`}>
-          <label htmlFor="email" className={`label-field ${!isValidEmail ? 'invalid-input' : ''}`}>Email address</label>
-          <div className="input-field-container">
+    <div className={`form-container ${!isValidEmail ? 'invalid-input' : ''}`}>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email" className={`label-field ${!isValidEmail ? 'invalid-input' : ''}`}>
+          Email address
+        </label>
+        <div className="input-field-container">
           <input
             type="email"
             id="email"
@@ -46,17 +44,12 @@ export default function NewsletterForm() {
             autoComplete="email"
             className={`input-field ${!isValidEmail ? 'invalid-input' : ''}`}
           />
-          {!isValidEmail && (
-            <p className="error-message">Valid email required</p>
-          )}
-          </div>
+          {!isValidEmail && <p className="error-message">Valid email required</p>}
         </div>
-        <button type="submit">Subscribe to monthly newsletter</button>
+        <button type="submit">Subscribe to the monthly newsletter</button>
       </form>
-      ) : (
-        // Render the SuccessMessage component only when the form is submitted
-        <SuccessMessage isVisible={submitted} />
-      )}
     </div>
   );
 }
+
+

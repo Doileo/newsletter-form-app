@@ -82,7 +82,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
@@ -119,7 +119,29 @@ button {
   margin: 24px 0;
 }
 
-.success-message {
+.input-field-container {
+  position: relative;
+}
+
+.input-field.invalid-input {
+  color: #FF6155;
+  border: 1px solid #FF6155;
+  background: rgba(255, 97, 85, 0.15);
+}
+
+.error-message {
+  color: #FF6155;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -23px 4px 8px 8px;
+}
+
+.success--container {
   padding: 149px 24px 40px 24px;
 }
 
@@ -139,8 +161,8 @@ button {
   margin-top: 271px;
 }
 
-.success-message {
-  display: none;
+.success--container {
+  display: none; /* Hidden by default */
 }
 
 @media screen and (max-width: 767px) {
@@ -176,7 +198,8 @@ button {
 
   .hero--text-container {
     flex: 1;
-    margin-top: 10px;
+    margin-top: 30px;
+    padding: 0;
   }
 
   .hero--header {
@@ -197,7 +220,7 @@ button {
     flex: 1;
     height: 200px;
     width: 50%;
-    margin-top: -325px;
+    margin-top: -310px;
   }
 
   .feature--icon {
@@ -225,7 +248,7 @@ button {
     margin-top: 10px;
   }
 
-  .input-field-container {
+  /*.input-field-container {
     position: relative;
   }
 
@@ -245,9 +268,9 @@ button {
     top: 0;
     right: 0;
     margin: -23px 4px 8px 8px;
-  }
+  } */
 
-  .success-message {
+  .success--container {
     padding: 48px 64px 0 64px;
   }
 
@@ -315,12 +338,11 @@ button {
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
-  .success-message {
+  .success--container {
     display: flex;
     flex-direction: column;
     justify-content: left;
     gap: 35px;
-    margin-top: 90px;
     width: 70%;
   }
 
