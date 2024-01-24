@@ -161,10 +161,6 @@ button {
   margin-top: 271px;
 }
 
-.success--container {
-  display: none; /* Hidden by default */
-}
-
 @media screen and (max-width: 767px) {
   .desktop-image {
     display: none;
@@ -173,7 +169,6 @@ button {
 
 /* Styles for screens larger than 768px (tablets) */
 @media only screen and (min-width: 768px) {
-
   .main-container {
     display: flex;
     flex-direction: column;
@@ -204,7 +199,7 @@ button {
 
   .hero--header {
     font-size: 3em;
-    font-weight: 700;    
+    font-weight: 700;
     line-height: 100%;
     padding-left: 0;
     margin: 20px 0 10px 0;
@@ -248,28 +243,6 @@ button {
     margin-top: 10px;
   }
 
-  /*.input-field-container {
-    position: relative;
-  }
-
-  .input-field.invalid-input {
-    color: #FF6155;
-    border: 1px solid #FF6155;
-    background: rgba(255, 97, 85, 0.15);
-  }
-  
-  .error-message {
-    color: #FF6155;
-    text-align: right;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 150%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: -23px 4px 8px 8px;
-  } */
-
   .success--container {
     padding: 48px 64px 0 64px;
   }
@@ -286,6 +259,28 @@ button {
   .success--button {
     margin-top: 10px;
     width: 380px;
+  }
+
+  .input-field-container {
+    position: relative;
+  }
+
+  .input-field.invalid-input {
+    color: #FF6155;
+    border: 1px solid #FF6155;
+    background: rgba(255, 97, 85, 0.15);
+  }
+
+  .error-message {
+    color: #FF6155;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -23px 4px 8px 8px;
   }
 }
 
