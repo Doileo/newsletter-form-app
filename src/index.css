@@ -3,6 +3,7 @@
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
+  --coral-red: hsl(8, 100%, 65%);
 }
 
 * {
@@ -37,7 +38,7 @@ body {
 .hero--header {
   font-size: 2.5em;
   font-weight: 700;
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   margin-top: 40px;
 }
 
@@ -45,7 +46,7 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 150%;
-  color:hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   margin: 0;
 }
 
@@ -72,7 +73,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 150%;
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   padding-left: 16px;
   margin: 0;
 }
@@ -83,31 +84,30 @@ form {
   flex-direction: column;
   max-width: 400px;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0 24px;
 }
 
 label {
   font-size: 0.75em;
   font-weight: 700;
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   margin: 41px 0 8px 0;
   display: block;
 }
 
 input {
   border-radius: 8px;
-  border: 1px solid hsl(231, 7%, 60%);
+  border: 1px solid var(--grey);
   padding: 12px;
-  width: 327px;
-  color:hsl(231, 7%, 60%);
+  color: var(--grey);
   font-size: 1em;
   line-height: 150%;
+  width: 330px;
 }
 
 button {
-  width: 327px;
-  background-color: hsl(234, 29%, 20%);
-  color:hsl(0, 0%, 100%);
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   padding: 12px;
@@ -116,7 +116,8 @@ button {
   line-height: 150%;
   text-align: center;
   cursor: pointer;
-  margin: 24px 0;
+  margin: 24px 24px 0 0;
+  width: 330px;
 }
 
 .input-field-container {
@@ -124,13 +125,13 @@ button {
 }
 
 .input-field.invalid-input {
-  color: #FF6155;
-  border: 1px solid #FF6155;
+  color: var(--coral-red);
+  border: 1px solid var(--coral-red);
   background: rgba(255, 97, 85, 0.15);
 }
 
 .error-message {
-  color: #FF6155;
+  color: var(--coral-red);
   text-align: right;
   font-size: 12px;
   font-weight: 700;
@@ -146,19 +147,15 @@ button {
 }
 
 .success--header {
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   font-size: 2.5em;
   font-weight: 700;
   line-height: 100%;
 }
 
 .success--message {
-  color: hsl(234, 29%, 20%);
+  color: var(--dark-slate-grey);
   line-height: 150%;
-}
-
-.success--button {
-  margin-top: 271px;
 }
 
 @media screen and (max-width: 767px) {
@@ -266,13 +263,13 @@ button {
   }
 
   .input-field.invalid-input {
-    color: #FF6155;
-    border: 1px solid #FF6155;
+    color: var(--coral-red);
+    border: 1px solid var(--coral-red);
     background: rgba(255, 97, 85, 0.15);
   }
 
   .error-message {
-    color: #FF6155;
+    color: var(--coral-red);
     text-align: right;
     font-size: 12px;
     font-weight: 700;
