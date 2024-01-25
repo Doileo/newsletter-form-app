@@ -7,6 +7,11 @@ import SuccessMessage from './components/SuccessMessage';
 export default function App() {
   const [submitted, setSubmitted] = useState(false);
 
+  const handleDismiss = () => {
+    // Handle dismissal by updating state to show the main page
+    setSubmitted(false);
+  };
+
   return (
     <div className="main-container">
       {!submitted ? (
@@ -16,7 +21,7 @@ export default function App() {
           <NewsletterForm setSubmitted={setSubmitted} />
         </>
       ) : (
-        <SuccessMessage />
+        <SuccessMessage  onDismiss={handleDismiss}/>
       )}
     </div>
   );

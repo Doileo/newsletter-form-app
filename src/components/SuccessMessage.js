@@ -1,7 +1,11 @@
 import React from 'react';
 import successIcon from '../images/icon-success.png';
 
-export default function SuccessMessage() {
+export default function SuccessMessage({ onDismiss }) {
+  const handleDismiss = () => {
+    // Call the onDismiss function passed from the parent component (App.js)
+    onDismiss()
+  }
   return (
     <div className="success--container">
       <img src={successIcon} alt="A success icon." className="success--icon" />
@@ -11,7 +15,7 @@ export default function SuccessMessage() {
         <span className="strong">ash@loremcompany.com</span>. Please open it and click the button
         inside to confirm your subscription.
       </p>
-      <button>Dismiss message</button>
+      <button onClick={handleDismiss}>Dismiss message</button>
     </div>
   );
 }
