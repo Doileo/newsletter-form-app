@@ -16,10 +16,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Typografy */
 .bold {
   font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
@@ -50,6 +52,7 @@ body {
   margin: 0;
 }
 
+/* Features Section */
 .features-list-container {
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ body {
   margin: 0;
 }
 
-/* NewsletterForm styles */
+/* NewsletterForm Section */
 form {
   display: flex;
   flex-direction: column;
@@ -86,6 +89,7 @@ form {
   align-items: flex-start;
   margin: 0 24px;
 }
+
 
 label {
   font-size: 0.75em;
@@ -124,6 +128,7 @@ button {
   position: relative;
 }
 
+/* Validation Styles */
 .input-field.invalid-input {
   color: var(--coral-red);
   border: 1px solid var(--coral-red);
@@ -142,6 +147,7 @@ button {
   margin: -23px 4px 8px 8px;
 }
 
+/* Success Section */
 .success--container {
   padding: 149px 24px 40px 24px;
 }
@@ -158,13 +164,17 @@ button {
   line-height: 150%;
 }
 
+
+/* Responsive Styles */
+
+/* Mobile Styles */
 @media screen and (max-width: 767px) {
   .desktop-image {
     display: none;
   }
 }
 
-/* Styles for screens larger than 768px (tablets) */
+/* Tablet Styles */
 @media only screen and (min-width: 768px) {
   .main-container {
     display: flex;
@@ -281,7 +291,7 @@ button {
   }
 }
 
-/* Styles for screens larger than 1024px (medium desktops) */
+/* Large Desktop Styles */
 @media only screen and (min-width: 1024px) {
   body {
     margin: 0;
