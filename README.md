@@ -33,12 +33,12 @@ Users should be able to:
 
 ### Screenshot
 <div style="display: flex; gap: 16px; justify-content: center; margin-bottom: 15px">
-<img src="./screenshots/screenshot-of-mobile.png" alt="Mobile screenshot" width="100" />
-<img src="./screenshots/screenshot-of-desktop.png" alt="Desktop screenshot" width="300" /> 
+<img src="./screenshots/screenshot-of-mobile.png" alt="Mobile screenshot" width="300" />
+<img src="./screenshots/screenshot-of-desktop.png" alt="Desktop screenshot" width="500" /> 
 </div>
 <div style="display: flex; gap: 16px; justify-content: center;">
-<img src="./screenshots/screenshot-of-desktop-two.png" alt="Desktop screenshot with interactive elements" width="300" /> 
-<img src="./screenshots/screenshot-of-success-message.png" alt="Success message screenshot" width="250" />
+<img src="./screenshots/screenshot-of-desktop-two.png" alt="Desktop screenshot with interactive elements" width="500" /> 
+<img src="./screenshots/screenshot-of-success-message.png" alt="Success message screenshot" width="450" />
 </div>
 
 
