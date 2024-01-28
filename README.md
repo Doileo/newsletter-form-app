@@ -4,16 +4,17 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned and Useful resources](#what-i-learned-and-useful-resources)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Frontend Mentor - Newsletter sign-up form with success message solution](#frontend-mentor---newsletter-sign-up-form-with-success-message-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned and Useful resources](#what-i-learned-and-useful-resources)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
 
 ## Overview
@@ -31,8 +32,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![](./screenshot.jpg)
+<div style="display: flex; gap: 16px; justify-content: center; margin-bottom: 15px">
+<img src="./screenshots/screenshot-of-mobile.png" alt="Mobile screenshot" width="100" />
+<img src="./screenshots/screenshot-of-desktop.png" alt="Desktop screenshot" width="300" /> 
+</div>
+<div style="display: flex; gap: 16px; justify-content: center;">
+<img src="./screenshots/screenshot-of-desktop-two.png" alt="Desktop screenshot with interactive elements" width="300" /> 
+<img src="./screenshots/screenshot-of-success-message.png" alt="Success message screenshot" width="250" />
+</div>
 
 
 ### Links
