@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/reactpowered-responsive-newsletter-form-chOYm5GhMo)
 - Live Site URL: [Live site URL here](https://newsletter-form-app.netlify.app/)
 
 ## My process
@@ -74,5 +74,5 @@ I plan to continue focusing on mastering React and expanding my skills in buildi
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- LinkedIn - [Doina Leovchin](https://www.linkedin.com/in/doinaleovchindeveloper/)
+- Frontend Mentor - [@yDoileo](https://www.frontendmentor.io/profile/Doileo)
