@@ -64,13 +64,15 @@ In the process of completing this project, I gained experience in using React an
 - [React - State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [React - Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 - [React - Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
-
-(Working_with_Objects)
 - [React Hooks Cheat Sheet](https://react-hooks-cheatsheet.com/)
 
 ### Continued development
 
-I plan to continue focusing on mastering React and expanding my skills in building dynamic and interactive web applications.
+I plan to:
+- Enhance skills in managing different states with React
+- Explore more about React hooks
+- Understand the lifecycle of components
+- Ensure smooth user experience across different devices
 
 ## Author
 
