@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Header from './components/Header';
-import FeaturesList from './components/FeaturesList';
-import NewsletterForm from './components/NewsletterForm';
-import SuccessMessage from './components/SuccessMessage';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import FeaturesList from "./components/FeaturesList";
+import NewsletterForm from "./components/NewsletterForm";
+import SuccessMessage from "./components/SuccessMessage";
+import "./index.css";
 
 export default function App() {
   const [submitted, setSubmitted] = useState(false);
@@ -21,11 +22,8 @@ export default function App() {
           <NewsletterForm setSubmitted={setSubmitted} />
         </>
       ) : (
-        <SuccessMessage  onDismiss={handleDismiss}/>
+        <SuccessMessage onDismiss={handleDismiss} />
       )}
     </div>
   );
 }
-
-
-
