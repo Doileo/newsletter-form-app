@@ -4,21 +4,21 @@ import desktopIllustration from "../images/illustration-sign-up-desktop.png";
 
 export default function Header() {
   return (
-    <div className="hero">
-        <img 
-          src={mobileIllustration} 
-          alt="A graphic." 
-          className="hero--image mobile-image" 
+    <header className="hero">
+      <picture>
+        <source srcSet={desktopIllustration} media="(min-width:768px" />
+        <img
+          src={mobileIllustration}
+          alt="Illustration of signing up."
+          className="hero--image"
         />
-        <img 
-          src={desktopIllustration} 
-          alt="A graphic." 
-          className="hero--image desktop-image" 
-        />
-        <div className="hero--text-container">
-          <h1 className="hero--header">Stay updated!</h1>
-          <p className="hero--text">Join 60,000+ product managers receiving monthly updates on:</p>
-        </div>
-    </div>
+      </picture>
+      <div className="hero--text-container">
+        <h1 className="hero--header">Stay updated!</h1>
+        <p className="hero--text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+      </div>
+    </header>
   );
 }
