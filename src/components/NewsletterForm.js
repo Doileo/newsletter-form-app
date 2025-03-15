@@ -1,55 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-export default function NewsletterForm({ setSubmitted }) {
-  const [email, setEmail] = useState('');
+export default function NewsletterForm({ setIsSubmitted }) {
+  const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
 
   const validateEmail = (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const isValid = validateEmail(email);
-
-    if (isValid) {
-      // Call the function from props to update App.js state
-      setSubmitted(true);
+    if (validateEmail(email)) {
+      setIsSubmitted(true);
     } else {
-      // Update state to indicate invalid email
       setIsValidEmail(false);
     }
   };
 
-  const handleEmailChange = (e) => {
-    // Reset validation status when the user types
-    setIsValidEmail(true);
-    setEmail(e.target.value);
-  };
-
   return (
-    <div className={`form-container ${!isValidEmail ? 'invalid-input' : ''}`}>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email" className={`label-field ${!isValidEmail ? 'invalid-input' : ''}`}>
-          Email address
-        </label>
+    <section className="form-container">
+      <form onSubmit={handleSubmit} noValidate>
+        <label htmlFor="email"> Email address</label>
         <div className="input-field-container">
           <input
             type="email"
             id="email"
             name="email"
             value={email}
-            onChange={handleEmailChange}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              setIsValidEmail(true);
+            }}
             placeholder="email@company.com"
             required
+            aria-describedby="email-error"
             autoComplete="email"
-            className={`input-field ${!isValidEmail ? 'invalid-input' : ''}`}
+            className={`input-field ${!isValidEmail ? "invalid" : ""}`}
           />
-          {!isValidEmail && <p className="error-message">Valid email required</p>}
+          {!isValidEmail && (
+            <p id="email-error" className="error-message">
+              Valid email required
+            </p>
+          )}
         </div>
-        <button type="submit">Subscribe to the monthly newsletter</button>
+        <button type="submit" aria-label="Subscribe to the newsletter">
+          Subscribe
+        </button>
       </form>
-    </div>
+    </section>
   );
 }
-
-
