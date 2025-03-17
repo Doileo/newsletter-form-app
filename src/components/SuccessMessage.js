@@ -11,7 +11,11 @@ export default function SuccessMessage({ onDismiss }) {
         <span className="strong">your email</span>. Please open it and click the
         button inside to confirm your subscription.
       </p>
-      <button onClick={onDismiss} aria-label="Dismiss message">
+      <button
+        onClick={onDismiss}
+        className="success-btn"
+        aria-label="Dismiss message"
+      >
         Dismiss
       </button>
     </section>

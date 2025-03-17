@@ -6,35 +6,40 @@
   --coral-red: hsl(8, 100%, 65%);
 }
 
+/* General Reset */
 * {
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* Typografy */
-.bold {
-  font-weight: bold;
-}
-
-/* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
 }
 
-.mobile-image {
-  max-width: 100%;
+.hero--image {
   width: 100%;
-  align-self: center;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .hero--text-container {
-  padding-inline: 24px;
+  padding: 0 24px;
+  margin-top: 20px;
 }
 
 .hero--header {
@@ -42,6 +47,11 @@ body {
   font-weight: 700;
   color: var(--dark-slate-grey);
   margin-top: 40px;
+}
+
+.hero--header,
+.hero--text {
+  text-align: left;
 }
 
 .hero--text {
@@ -56,9 +66,9 @@ body {
 .features-list-container {
   display: flex;
   flex-direction: column;
-  gap: 13px;
-  margin-top: 24px;
-  padding-right: 24px;
+  gap: 0.625rem;
+  margin-top: 2rem;
+  padding: 0 1.5rem;
 }
 
 .feature-item {
@@ -69,15 +79,14 @@ body {
 .feature--icon {
   width: 21px;
   height: auto;
-  margin-left: 24px;
 }
 
 .feature--description {
   font-weight: 400;
   font-size: 1em;
-  line-height: 150%;
+  line-height: 1.5;
   color: var(--dark-slate-grey);
-  padding-left: 16px;
+  padding-left: 0.625rem;
   margin: 0;
 }
 
@@ -86,10 +95,8 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  align-items: flex-start;
-  margin: 0 24px;
+  padding: 0 1.5rem;
 }
-
 
 label {
   font-size: 0.75em;
@@ -106,7 +113,8 @@ input {
   color: var(--grey);
   font-size: 1em;
   line-height: 150%;
-  width: 330px;
+  width: 100%;
+  max-width: 330px;
 }
 
 button {
@@ -121,7 +129,8 @@ button {
   text-align: center;
   cursor: pointer;
   margin: 24px 24px 0 0;
-  width: 330px;
+  width: 100%;
+  max-width: 330px;
 }
 
 .input-field-container {
@@ -148,24 +157,36 @@ button {
 }
 
 /* Success Section */
-.success--container {
+.success-container {
   padding: 149px 24px 40px 24px;
 }
 
-.success--header {
+.success-header {
   color: var(--dark-slate-grey);
   font-size: 2.5em;
   font-weight: 700;
   line-height: 100%;
 }
 
-.success--message {
+.success-message {
   color: var(--dark-slate-grey);
   line-height: 150%;
 }
 
-
-/* Responsive Styles */
+.success-btn {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  margin: 0.625rem 0 0 0;
+  width: 100%;
+}
 
 /* Mobile Styles */
 @media screen and (max-width: 767px) {
@@ -174,7 +195,7 @@ button {
   }
 }
 
-/* Tablet Styles */
+/* Tablet Styles
 @media only screen and (min-width: 768px) {
   .main-container {
     display: flex;
@@ -243,7 +264,8 @@ button {
 
   input,
   button {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 
   button {
@@ -265,7 +287,8 @@ button {
 
   .success--button {
     margin-top: 10px;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
   }
 
   .input-field-container {
@@ -291,7 +314,7 @@ button {
   }
 }
 
-/* Large Desktop Styles */
+/* Large Desktop Styles
 @media only screen and (min-width: 1024px) {
   body {
     margin: 0;
@@ -327,7 +350,8 @@ button {
 
   input,
   button {
-    width: 376px;
+    width: 100%;
+    max-width: 376px;
   }
 
   button {
@@ -335,8 +359,8 @@ button {
   }
 
   button:hover {
-    background: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
-    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+    background: linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
@@ -357,7 +381,5 @@ button {
   .success--message {
     margin: 0;
   }
-}
-
-
-
+} 
+ */
