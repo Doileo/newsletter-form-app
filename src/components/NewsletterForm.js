@@ -18,7 +18,7 @@ export default function NewsletterForm({ setIsSubmitted }) {
   return (
     <section className="form-container">
       <form onSubmit={handleSubmit} noValidate>
-        <label htmlFor="email"> Email address</label>
+        <label htmlFor="email">Email address</label>
         <div className="input-field-container">
           <input
             type="email"

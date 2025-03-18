@@ -62,6 +62,12 @@ html {
   margin: 0;
 }
 
+.features-newsletter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 /* Features Section */
 .features-list-container {
   display: flex;
@@ -195,19 +201,19 @@ button {
   }
 }
 
-/* Tablet Styles
+/* Tablet Styles */
 @media only screen and (min-width: 768px) {
   .main-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 24px 24px 0 64px;
+    padding: 1rem 1rem 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
   }
 
   .hero {
     flex-direction: row-reverse;
     align-items: flex-start;
-    gap: 30px;
   }
 
   .desktop-image {
@@ -219,14 +225,16 @@ button {
     display: none;
   }
 
+  .hero--content {
+    margin: 1.5rem;
+  }
+
   .hero--text-container {
     flex: 1;
-    margin-top: 30px;
-    padding: 0;
   }
 
   .hero--header {
-    font-size: 3em;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 100%;
     padding-left: 0;
@@ -239,11 +247,9 @@ button {
     text-align: left;
   }
 
-  .features-list-container {
+  .features-newsletter-container {
     flex: 1;
-    height: 200px;
-    width: 50%;
-    margin-top: -310px;
+    flex-direction: column;
   }
 
   .feature--icon {
@@ -251,7 +257,9 @@ button {
   }
 
   form {
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   label {
