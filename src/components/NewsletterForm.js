@@ -42,7 +42,7 @@ export default function NewsletterForm({ setIsSubmitted }) {
           )}
         </div>
         <button type="submit" aria-label="Subscribe to the newsletter">
-          Subscribe
+          Subscribe to monthly newsletter
         </button>
       </form>
     </section>

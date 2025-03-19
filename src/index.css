@@ -25,8 +25,8 @@ html {
   flex-direction: column;
   width: 100%;
   max-width: 100%;
+  height: auto;
   overflow: hidden;
-  align-items: center;
   text-align: center;
 }
 
@@ -97,10 +97,15 @@ html {
 }
 
 /* NewsletterForm Section */
+.form-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
+  width: 100%;
+  max-width: 100%;
   padding: 0 1.5rem;
 }
 
@@ -120,8 +125,6 @@ input {
   color: var(--grey);
   font-size: 1em;
   line-height: 150%;
-  width: 100%;
-  max-width: 330px;
 }
 
 button {
@@ -136,8 +139,12 @@ button {
   text-align: center;
   cursor: pointer;
   margin: 24px 24px 0 0;
+}
+
+input,
+button {
   width: 100%;
-  max-width: 330px;
+  max-width: 100%;
 }
 
 .input-field-container {

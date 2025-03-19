@@ -16,7 +16,7 @@ export default function SuccessMessage({ onDismiss }) {
         className="success-btn"
         aria-label="Dismiss message"
       >
-        Dismiss
+        Dismiss message
       </button>
     </section>
   );
