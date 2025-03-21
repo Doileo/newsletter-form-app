@@ -4,6 +4,7 @@
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
   --coral-red: hsl(8, 100%, 65%);
+  --soft-red: hsl(0, 100%, 50%); /* Softer red for error state */
 }
 
 /* General Reset */
@@ -153,13 +154,13 @@ button {
 
 /* Validation Styles */
 .input-field.invalid-input {
-  color: var(--coral-red);
-  border: 1px solid var(--coral-red);
-  background: rgba(255, 97, 85, 0.15);
+  color: var(--soft-red);
+  border: 1px solid var(--soft-red);
+  background: rgba(255, 0, 0, 0.1);
 }
 
 .error-message {
-  color: var(--coral-red);
+  color: var(--soft-red);
   text-align: right;
   font-size: 12px;
   font-weight: 700;
@@ -234,7 +235,7 @@ button {
   }
 
   .hero--content {
-    padding: 0.5rem 1rem 0 0;
+    padding: 0.5rem 1rem 0 1rem;
   }
 
   .hero--header {
@@ -317,13 +318,13 @@ button {
   }
 
   .input-field.invalid-input {
-    color: var(--coral-red);
-    border: 1px solid var(--coral-red);
-    background: rgba(255, 97, 85, 0.15);
+    color: var(--soft-red);
+    border: 1px solid var(--soft-red);
+    background: rgba(255, 0, 0, 0.1);
   }
 
   .error-message {
-    color: var(--coral-red);
+    color: var(--soft-red);
     text-align: right;
     font-size: 12px;
     font-weight: 700;
@@ -335,48 +336,21 @@ button {
   }
 }
 
-/* Large Desktop Styles
+/* Large Desktop Styles */
 @media only screen and (min-width: 1024px) {
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main-container {
-    padding: 24px 0;
-  }
-
-  .hero {
-    gap: 60px;
-  }
-
-  .hero--text-container {
-    padding: 0;
-    margin-top: 50px;
+  .hero--content {
+    padding-right: 2rem;
   }
 
   .hero--header {
-    font-size: 3.5em;
+    margin: 2rem 0;
   }
 
-  .features-list-container {
-    margin-top: -425px;
-  }
-
-  label {
-    margin-top: 41px;
-  }
-
+  .hero--text,
+  .feature--description,
   input,
   button {
-    width: 100%;
-    max-width: 376px;
-  }
-
-  button {
-    margin-top: 20px;
+    font-size: 1.125rem;
   }
 
   button:hover {
@@ -385,22 +359,8 @@ button {
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
-  .success--container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 35px;
-    width: 70%;
+  button:focus {
+    outline: 3px solid var(--coral-red);
+    outline-offset: 4px;
   }
-
-  .success--icon {
-    display: flex;
-    max-width: 64px;
-  }
-
-  .success--header,
-  .success--message {
-    margin: 0;
-  }
-} 
- */
+}
