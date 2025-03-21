@@ -363,4 +363,27 @@ button {
     outline: 3px solid var(--coral-red);
     outline-offset: 4px;
   }
+
+  .success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2.5rem;
+    width: 70%;
+  }
+
+  .success-icon {
+    display: flex;
+    max-width: 64px;
+  }
+
+  .success-header,
+  .success-message {
+    margin: 0;
+  }
+
+  .success-message,
+  .success-btn {
+    font-size: 1.125rem;
+  }
 }
