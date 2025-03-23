@@ -1,17 +1,17 @@
 import React from "react";
-import mobileIllustration from "../images/illustration-sign-up-mobile.png";
-import desktopIllustration from "../images/illustration-sign-up-desktop.png";
 import FeaturesList from "./FeaturesList";
 import NewsletterForm from "./NewsletterForm";
 
 export default function Header({ setIsSubmitted }) {
-  // Accept setIsSubmitted as a prop
   return (
     <header className="hero">
       <picture>
-        <source srcSet={desktopIllustration} media="(min-width:768px)" />
+        <source
+          srcSet="/images/illustration-sign-up-desktop.png"
+          media="(min-width:768px)"
+        />
         <img
-          src={mobileIllustration}
+          src="/images/illustration-sign-up-mobile.png"
           alt="Illustration of signing up."
           className="hero--image"
         />

@@ -1,5 +1,4 @@
 import React from "react";
-import iconList from "../images/icon-list.png";
 
 // Sample data for features
 const featuresData = [
@@ -20,7 +19,7 @@ export default function FeaturesList() {
       {featuresData.map((feature, index) => (
         <div className="feature-item" key={index}>
           <img
-            src={iconList}
+            src="/images/icon-list.png"
             alt=""
             className="feature--icon"
             aria-hidden="true"
