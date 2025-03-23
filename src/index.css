@@ -1,7 +1,7 @@
 :root {
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoal-grey: hsl(235, 18%, 26%);
-  --grey: hsl(231, 7%, 60%);
+  --grey: hsl(227, 5%, 36%);
   --white: hsl(0, 0%, 100%);
   --coral-red: hsl(8, 100%, 65%);
   --soft-red: hsl(0, 100%, 50%); /* Softer red for error state */
