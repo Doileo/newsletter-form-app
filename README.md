@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -8,14 +8,15 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
+      - [Mobile Screenshots](#mobile-screenshots)
+      - [Desktop Screenshots](#desktop-screenshots)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned and Useful resources](#what-i-learned-and-useful-resources)
     - [Continued development](#continued-development)
   - [Author](#author)
-
 
 ## Overview
 
@@ -31,14 +32,47 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-<img src="./screenshots/screenshot-of-mobile.png" alt="Mobile screenshot" width="300" />
-<img src="./screenshots/screenshot-of-desktop.png" alt="Desktop screenshot" width="500" /> 
-<img src="./screenshots/screenshot-of-desktop-two.png" alt="Desktop screenshot with interactive elements" width="500" /> 
-<img src="./screenshots/screenshot-of-success-message.png" alt="Success message screenshot" width="450" />
+##### Mobile Screenshots
 
+<table>
+  <tr>
+    <td>
+      <strong>Mobile View:</strong><br>
+      <img src="public/screenshots/screenshot-of-mobile.png" alt="Mobile View" width="300"/><br>
+    </td>
+    <td>
+      <strong>Mobile View with Error:</strong><br>
+      <img src="public/screenshots/error-mobile-screenshot.png" alt="Mobile View with Error" width="300"/><br>
+    </td>
+  </tr>
+</table>
 
+##### Desktop Screenshots
+
+<table>
+  <tr>
+    <td>
+      <strong>Desktop View:</strong><br>
+      <img src="public/screenshots/screenshot-of-desktop.png" alt="Desktop View" width="500"/><br>
+    </td>
+    <td>
+      <strong>Desktop View with Error:</strong><br>
+      <img src="public/screenshots/error-state-screenshot.png" alt="Desktop View with Error" width="500"/><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Desktop with Interactive Elements:</strong><br>
+      <img src="public/screenshots/screenshot-of-desktop-two.png" alt="Desktop with Interactive Elements" width="500"/><br>
+    </td>
+    <td>
+      <strong>Success Message:</strong><br>
+      <img src="public/screenshots/screenshot-of-success-message.png" alt="Success Message" width="450"/><br>
+    </td>
+  </tr>
+</table>
 
 ### Links
 
@@ -56,7 +90,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-
 ### What I learned and Useful resources
 
 In the process of completing this project, I gained experience in using React and specifically worked with the `useState` hook.
@@ -69,6 +102,7 @@ In the process of completing this project, I gained experience in using React an
 ### Continued development
 
 I plan to:
+
 - Enhance skills in managing different states with React
 - Explore more about React hooks
 - Understand the lifecycle of components

@@ -168,7 +168,7 @@ button {
   position: absolute;
   top: 100%;
   right: 0;
-  margin-top: 4px;
+  transform: translateY(-86px);
 }
 
 /* Success Section */
@@ -332,7 +332,7 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    margin: -23px 4px 8px 8px;
+    transform: translateY(-35px);
   }
 }
 
