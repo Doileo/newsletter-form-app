@@ -33,7 +33,7 @@ export default function NewsletterForm({ setIsSubmitted }) {
             required
             aria-describedby="email-error"
             autoComplete="email"
-            className={`input-field ${!isValidEmail ? "invalid" : ""}`}
+            className={`input-field ${!isValidEmail ? "invalid-input" : ""}`}
           />
           {!isValidEmail && (
             <p id="email-error" className="error-message">

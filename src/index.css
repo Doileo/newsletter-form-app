@@ -152,11 +152,11 @@ button {
   position: relative;
 }
 
-/* Validation Styles */
+/* Invalid Input Styling */
 .input-field.invalid-input {
-  color: var(--soft-red);
   border: 1px solid var(--soft-red);
   background: rgba(255, 0, 0, 0.1);
+  color: var(--soft-red);
 }
 
 .error-message {
@@ -164,11 +164,11 @@ button {
   text-align: right;
   font-size: 12px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 1.5;
   position: absolute;
-  top: 0;
+  top: 100%;
   right: 0;
-  margin: -23px 4px 8px 8px;
+  margin-top: 4px;
 }
 
 /* Success Section */
