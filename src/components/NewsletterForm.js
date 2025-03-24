@@ -6,6 +6,13 @@ export default function NewsletterForm({ setIsSubmitted }) {
 
   const validateEmail = (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
 
+  // Function to handle email input change and validation
+  const handleEmailChange = (e) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+    setIsValidEmail(validateEmail(newEmail)); // Only hide error if it's valid
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateEmail(email)) {
@@ -25,11 +32,7 @@ export default function NewsletterForm({ setIsSubmitted }) {
             id="email"
             name="email"
             value={email}
-            onChange={(e) => {
-              const newEmail = e.target.value;
-              setEmail(newEmail);
-              setIsValidEmail(validateEmail(newEmail)); // Only hide error if it's valid
-            }}
+            onChange={handleEmailChange}
             placeholder="email@company.com"
             required
             aria-describedby="email-error"
