@@ -26,8 +26,9 @@ export default function NewsletterForm({ setIsSubmitted }) {
             name="email"
             value={email}
             onChange={(e) => {
-              setEmail(e.target.value);
-              setIsValidEmail(true);
+              const newEmail = e.target.value;
+              setEmail(newEmail);
+              setIsValidEmail(validateEmail(newEmail)); // Only hide error if it's valid
             }}
             placeholder="email@company.com"
             required
