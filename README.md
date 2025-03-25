@@ -14,7 +14,9 @@ This is a solution to the [Newsletter sign-up form with success message challeng
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned and Useful resources](#what-i-learned-and-useful-resources)
+    - [Features I added](#features-i-added)
+    - [What I Learned \& Useful Resources](#what-i-learned--useful-resources)
+      - [Useful Resources:](#useful-resources)
     - [Continued development](#continued-development)
   - [Author](#author)
 
@@ -90,14 +92,21 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-### What I learned and Useful resources
+### Features I added
 
-In the process of completing this project, I gained experience in using React and specifically worked with the `useState` hook.
+- **Real-time Email Validation**: I implemented a feature that provides instant validation feedback as the user types their email. This enhancement helps users correct mistakes before submitting the form.
+
+### What I Learned & Useful Resources
+
+In this project, I gained experience in handling form validation in React, working with state, and improving accessibility.
+
+#### Useful Resources:
 
 - [React - State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [React - Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)
 - [React - Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
 - [React Hooks Cheat Sheet](https://react-hooks-cheatsheet.com/)
+- [MDN - Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 
 ### Continued development
 
