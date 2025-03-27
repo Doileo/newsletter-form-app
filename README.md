@@ -18,6 +18,10 @@ This is a solution to the [Newsletter sign-up form with success message challeng
     - [What I Learned \& Useful Resources](#what-i-learned--useful-resources)
       - [Useful Resources:](#useful-resources)
     - [Continued development](#continued-development)
+  - [Installation Instructions](#installation-instructions)
+  - [Dependencies](#dependencies)
+  - [Usage Instructions](#usage-instructions)
+  - [Project Structure](#project-structure)
   - [Author](#author)
 
 ## Overview
@@ -117,7 +121,64 @@ I plan to:
 - Understand the lifecycle of components
 - Ensure smooth user experience across different devices
 
+## Installation Instructions
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/YourUsername/newsletter-signup-form.git
+
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd newsletter-signup-form
+
+   ```
+
+3. Install dependencies:
+
+   ```sh
+   npm install
+
+   ```
+
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+
+## Dependencies
+
+- React.js
+- React Hooks
+
+## Usage Instructions
+
+1. Open the application in the browser.
+2. Enter an email address into the input field and submit the form.
+3. If the form is correctly filled, a success message will appear with the email.
+4. If there are errors (empty field or incorrect email format), validation messages will be shown.
+5. Resize the browser window to check the responsiveness across mobile and desktop layouts.
+
+## Project Structure
+
+newsletter-signup-form/
+├── public/
+│ ├── images/
+│ ├── screenshots/
+├── src/
+│ ├── components/
+│ ├── index.css
+│ ├── App.js
+│ ├── index.js
+├── package.json
+
+```
+
 ## Author
 
 - LinkedIn - [Doina Leovchin](https://www.linkedin.com/in/doinaleovchindeveloper/)
 - Frontend Mentor - [@yDoileo](https://www.frontendmentor.io/profile/Doileo)
+```
