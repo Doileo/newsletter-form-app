@@ -3,14 +3,20 @@ import React, { useState } from "react";
 export default function NewsletterForm({ setIsSubmitted }) {
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
+  const [isRecomputing, setIsRecomputing] = useState(false);
 
   const validateEmail = (input) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input);
 
-  // Function to handle email input change and validation
+  // Handle email input change
   const handleEmailChange = (e) => {
     const newEmail = e.target.value;
     setEmail(newEmail);
-    setIsValidEmail(validateEmail(newEmail)); // Only hide error if it's valid
+    setIsRecomputing(true);
+
+    setTimeout(() => {
+      setIsValidEmail(validateEmail(newEmail));
+      setIsRecomputing(false);
+    }, 500); // Delay to simulate "re-computing"
   };
 
   const handleSubmit = (e) => {
@@ -41,7 +47,14 @@ export default function NewsletterForm({ setIsSubmitted }) {
           />
           {!isValidEmail && (
             <p id="email-error" className="error-message">
-              Valid email required
+              Valid email required{" "}
+              {isRecomputing && (
+                <span className="loading-dots">
+                  <span>.</span>
+                  <span>.</span>
+                  <span>.</span>
+                </span>
+              )}
             </p>
           )}
         </div>
