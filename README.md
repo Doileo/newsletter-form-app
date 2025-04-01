@@ -99,6 +99,7 @@ Users should be able to:
 ### Features I added
 
 - **Real-time Email Validation**: I implemented a feature that provides instant validation feedback as the user types their email. This enhancement helps users correct mistakes before submitting the form.
+- **Hybrid Approach for Error Handling**: I added a "recomputing" animation next to the error message. This ensures users know that validation is still in progress, making the experience feel smoother and more interactive.
 
 ### What I Learned & Useful Resources
 
@@ -164,6 +165,7 @@ I plan to:
 
 ## Project Structure
 
+```
 newsletter-signup-form/
 ├── public/
 │ ├── images/
@@ -181,4 +183,3 @@ newsletter-signup-form/
 
 - LinkedIn - [Doina Leovchin](https://www.linkedin.com/in/doinaleovchindeveloper/)
 - Frontend Mentor - [@yDoileo](https://www.frontendmentor.io/profile/Doileo)
-```
